@@ -129,7 +129,7 @@
             this.radioLab.Size = new System.Drawing.Size(68, 17);
             this.radioLab.TabIndex = 16;
             this.radioLab.TabStop = true;
-            this.radioLab.Text = "Labyrinth";
+            this.radioLab.Text = "迷宫（升华）";
             this.radioLab.UseVisualStyleBackColor = true;
             this.radioLab.CheckedChanged += new System.EventHandler(this.HandleSplitCriteriaChanged);
             // 
@@ -142,7 +142,7 @@
             this.checkAutoSplit.Name = "checkAutoSplit";
             this.checkAutoSplit.Size = new System.Drawing.Size(124, 17);
             this.checkAutoSplit.TabIndex = 14;
-            this.checkAutoSplit.Text = "Enable Auto Splitting";
+            this.checkAutoSplit.Text = "开启自动切片";
             this.checkAutoSplit.UseVisualStyleBackColor = true;
             this.checkAutoSplit.CheckedChanged += new System.EventHandler(this.HandleAutoSplitChanged);
             // 
@@ -153,7 +153,7 @@
             this.radioLevels.Name = "radioLevels";
             this.radioLevels.Size = new System.Drawing.Size(56, 17);
             this.radioLevels.TabIndex = 13;
-            this.radioLevels.Text = "Levels";
+            this.radioLevels.Text = "等级";
             this.toolTip.SetToolTip(this.radioLevels, "Performs a split when the player reaches a specific level.");
             this.radioLevels.UseVisualStyleBackColor = true;
             this.radioLevels.CheckedChanged += new System.EventHandler(this.HandleSplitCriteriaChanged);
@@ -167,7 +167,7 @@
             this.radioZones.Size = new System.Drawing.Size(72, 17);
             this.radioZones.TabIndex = 12;
             this.radioZones.TabStop = true;
-            this.radioZones.Text = "Campaign";
+            this.radioZones.Text = "剧情";
             this.toolTip.SetToolTip(this.radioZones, "Performs a split when the player enters a specific zone for the first time.");
             this.radioZones.UseVisualStyleBackColor = true;
             this.radioZones.CheckedChanged += new System.EventHandler(this.HandleSplitCriteriaChanged);
@@ -179,7 +179,7 @@
             this.labelSplitOn.Name = "labelSplitOn";
             this.labelSplitOn.Size = new System.Drawing.Size(59, 13);
             this.labelSplitOn.TabIndex = 1;
-            this.labelSplitOn.Text = "Split mode:";
+            this.labelSplitOn.Text = "切片模式: ";
             // 
             // panelSplitList
             // 
@@ -209,7 +209,7 @@
             this.checkSelectAll.Name = "checkSelectAll";
             this.checkSelectAll.Size = new System.Drawing.Size(117, 17);
             this.checkSelectAll.TabIndex = 10;
-            this.checkSelectAll.Text = "Select/Deselect All";
+            this.checkSelectAll.Text = "全选/反选";
             this.checkSelectAll.UseVisualStyleBackColor = true;
             this.checkSelectAll.CheckedChanged += new System.EventHandler(this.HandleSelectAll);
             // 
@@ -222,7 +222,7 @@
             this.checkIcons.Name = "checkIcons";
             this.checkIcons.Size = new System.Drawing.Size(77, 17);
             this.checkIcons.TabIndex = 15;
-            this.checkIcons.Text = "With Icons";
+            this.checkIcons.Text = "包括图标";
             this.checkIcons.UseVisualStyleBackColor = true;
             this.checkIcons.CheckedChanged += new System.EventHandler(this.HandleIconsChecked);
             // 
@@ -232,7 +232,7 @@
             this.createSplitsButton.Name = "createSplitsButton";
             this.createSplitsButton.Size = new System.Drawing.Size(106, 23);
             this.createSplitsButton.TabIndex = 11;
-            this.createSplitsButton.Text = "Generate Splits";
+            this.createSplitsButton.Text = "生成切片";
             this.createSplitsButton.UseVisualStyleBackColor = true;
             this.createSplitsButton.Click += new System.EventHandler(this.HandleGenerateSplits);
             // 
@@ -245,7 +245,7 @@
             this.groupBox2.Size = new System.Drawing.Size(448, 86);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Load Removal";
+            this.groupBox2.Text = "读图移除";
             // 
             // linkLoadSetup
             // 
@@ -269,7 +269,7 @@
             this.checkLoadRemoval.Name = "checkLoadRemoval";
             this.checkLoadRemoval.Size = new System.Drawing.Size(131, 17);
             this.checkLoadRemoval.TabIndex = 0;
-            this.checkLoadRemoval.Text = "Enable Load Removal";
+            this.checkLoadRemoval.Text = "开启屏蔽读图时间";
             this.toolTip.SetToolTip(this.checkLoadRemoval, "Removes load times from the run.");
             this.checkLoadRemoval.UseVisualStyleBackColor = true;
             this.checkLoadRemoval.CheckedChanged += new System.EventHandler(this.handleLoadRemovalChanged);
@@ -280,7 +280,7 @@
             this.testButton.Name = "testButton";
             this.testButton.Size = new System.Drawing.Size(75, 23);
             this.testButton.TabIndex = 4;
-            this.testButton.Text = "Test";
+            this.testButton.Text = "测试";
             this.testButton.UseVisualStyleBackColor = true;
             this.testButton.Click += new System.EventHandler(this.HandleTestClick);
             // 
@@ -290,7 +290,7 @@
             this.browseButton.Name = "browseButton";
             this.browseButton.Size = new System.Drawing.Size(75, 23);
             this.browseButton.TabIndex = 3;
-            this.browseButton.Text = "Browse";
+            this.browseButton.Text = "浏览";
             this.browseButton.UseVisualStyleBackColor = true;
             this.browseButton.Click += new System.EventHandler(this.HandleBrowseClick);
             // 
@@ -310,7 +310,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Client log file location:";
+            this.label1.Text = "客户端日志文件(Client.txt)位置:";
             // 
             // openFileDialog
             // 

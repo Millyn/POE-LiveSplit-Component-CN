@@ -10,8 +10,8 @@ namespace POELiveSplitComponent.Component.Timer
     public class LoadRemoverSplitter : IClientEventHandler
     {
         // Zone that lab runners must enter before the lab. Unique zone name.
-        private static IZone LAB_ENTRANCE = Zone.Parse("Aspirants' Plaza", new HashSet<IZone>());
-        private static IZone ASPIRANTS_TRIAL = Zone.Parse("Aspirant's Trial", new HashSet<IZone>());
+        private static IZone LAB_ENTRANCE = Zone.Parse("试炼者广场（难度较大，建议高于当前地图等级5级后尝试）", new HashSet<IZone>());
+        private static IZone ASPIRANTS_TRIAL = Zone.Parse("升华试炼", new HashSet<IZone>());
         private ComponentSettings settings;
         private ITimerModel timer;
         private long loadTimes = 0;
@@ -23,12 +23,12 @@ namespace POELiveSplitComponent.Component.Timer
 
         readonly List<string> IzaroDeathLines = new List<string>()
         {
-            "I die for the Empire!",
-            "You are free!",
-            "Your destination is more dangerous than the journey, ascendant.",
-            "Triumphant at last!",
-            "The trap of tyranny is inescapable.",
-            "Delight in your gilded dungeon, ascendant.",
+            "我为了帝国而死!",
+            "你自由了!",
+            "终点比你的旅途更加危险, 试炼者.",
+            "你赢了!",
+            "暴政，似乎是每个王朝都不可避免的终点。",
+            "在华丽的牢笼中感到喜悦吧, 升华者.",
         };
 
         public LoadRemoverSplitter(ITimerModel timer, ComponentSettings settings)
@@ -55,7 +55,7 @@ namespace POELiveSplitComponent.Component.Timer
                 timer.CurrentState.IsGameTimePaused = false;
                 timer.CurrentState.LoadingTimes = TimeSpan.FromMilliseconds(loadTimes);
             }
-                        
+
             IZone zone = Zone.Parse(zoneName, encounteredZones);
 
             if (settings.AutoSplitEnabled)
